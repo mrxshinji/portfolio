@@ -1,0 +1,16 @@
+@use "/styles/variables" as v;
+
+.container {
+  @include v.flexCenter(column);
+  height: 42px;
+  width: 27px;
+  gap: 7px;
+  background: v.$bg;
+  border: none;
+
+  span {
+    width: 31px;
+    height: 3px;
+    background-color: v.$n1;
+  }
+}

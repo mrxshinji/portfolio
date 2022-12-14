@@ -1,0 +1,9 @@
+@use "/styles/variables" as v;
+
+.container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  @include v.flexCenter(col);
+  overflow: hidden;
+}

@@ -1,0 +1,21 @@
+@use "/styles/variables" as v;
+
+.container {
+  @include v.flexCenter(column);
+  min-height: 100vh;
+  position: relative;
+  background-color: v.$bg;
+  h1,
+  h2 {
+    color: v.$text;
+  }
+
+  header {
+    height: 10vh;
+    width: 100%;
+  }
+  main {
+    height: 80vh;
+    width: 100%;
+  }
+}
