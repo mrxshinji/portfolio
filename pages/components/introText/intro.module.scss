@@ -1,0 +1,48 @@
+@use "/styles/variables" as v;
+
+.frontContainer {
+    position: relative;
+    width: 90%;
+    @include v.flexCenter(column);
+    gap: 5rem;
+    right: 0;
+  }
+  
+  .introTextContainer {
+    position: relative;
+    padding: 10% 2.5%;
+    width: 100%;
+    color: v.$text;
+    font-size: 18px;
+    font-weight: 700;
+    border: 2px solid v.$p2;
+    transition: all 0.5s linear;
+    text-align: start;
+    overflow: hidden;
+  }
+  
+  .linkContainer {
+    align-self: flex-end;
+    @include v.flexCenter(column);
+    align-items: flex-end;
+    position: relative;
+    transition: all 0.5s linear;
+    width: 60%;
+  
+    ul {
+      @include v.flexCenter(column);
+      align-items: flex-start;
+      padding: 15% 5%;
+      border: 2px solid v.$p2;
+      gap: 2px;
+      width: 100%;
+  
+      li {
+        color: v.$text;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: start;
+      }
+    }
+  }
+  

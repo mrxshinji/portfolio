@@ -1,0 +1,13 @@
+// colour
+$bg: #0d1821;
+$p2: #344966;
+$text: #b4cded;
+$n1: #f0f4ef;
+
+
+@mixin flexCenter($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}

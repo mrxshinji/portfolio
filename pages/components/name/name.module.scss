@@ -1,0 +1,20 @@
+@use "/styles/variables" as v;
+
+.container {
+  position: absolute;
+  width: 530px;
+  height: 142px;
+  transform: rotate(-90deg);
+  left: -200px;
+  top: 0;
+}
+
+.nameLogo {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-size: 84px;
+  font-weight: 400;
+  color: v.$n1;
+  letter-spacing: -5px;
+  line-height: 142px;
+}
