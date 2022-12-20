@@ -1,3 +1,4 @@
+import Footer from "components/footer/footer";
 import { ReactNode, useEffect, useState } from "react";
 import Header from "../header/header";
 import s from "./layout.module.scss";
@@ -39,6 +40,9 @@ const Layout = ({ children }: Props) => {
         <Header isHeaderVisible={isHeaderVisible} />
       </header>
       {isMainVisible && <main>{children}</main>}
+      <footer>
+        <Footer isHeaderVisible={isHeaderVisible} />
+      </footer>
     </div>
   );
 };

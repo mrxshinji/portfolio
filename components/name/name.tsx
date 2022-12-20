@@ -1,15 +1,18 @@
 import s from "./name.module.scss";
 
 import { motion } from "framer-motion";
+import useIntro from "utils/useIntro";
 
 const NameLogo = () => {
+  const canAnimate = useIntro();
+
   return (
     <motion.div
       className={s.container}
-      initial={{ top: "-200px", opacity: 1 }}
+      initial={canAnimate}
       animate={{
         top: ["0px", "320px"],
-        opacity: [1, 1, 0.5, 0.2],
+        opacity: [1, 1, 0.5, 0.2, 0.1],
       }}
       transition={{ duration: 1 }}
     >

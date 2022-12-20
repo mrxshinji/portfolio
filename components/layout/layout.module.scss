@@ -3,6 +3,7 @@
 .container {
   @include v.flexCenter(column);
   min-height: 100vh;
+  max-width: 1650px;
   position: relative;
   background-color: v.$bg;
   h1,
@@ -14,8 +15,23 @@
     height: 10vh;
     width: 100%;
   }
+
   main {
     height: 80vh;
     width: 100%;
+  }
+
+  @include v.tabletMq {
+    main {
+      min-height: 656px;
+    }
+  }
+
+  @include v.desktopMq {
+    width: 80vw;
+
+    main {
+      height: 70vh;
+    }
   }
 }

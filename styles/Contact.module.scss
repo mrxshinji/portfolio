@@ -1,0 +1,21 @@
+@use "styles/variables" as c;
+
+.container {
+  width: 100%;
+  position: relative;
+  @include c.flexCenter(column);
+
+  height: 100%
+}
+
+.title {
+  @extend .aboutTitle;
+}
+
+.body {
+  @extend .aboutBody;
+
+  label {
+    color: c.$text;
+  }
+}

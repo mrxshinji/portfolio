@@ -1,0 +1,44 @@
+@use "styles/variables" as c;
+
+.container {
+  width: 100%;
+  position: relative;
+  @include c.flexCenter(column);
+
+  @include c.tabletMq {
+    height: 100%;
+  }
+}
+
+.title {
+  @extend .aboutTitle;
+
+  @include c.tabletMq {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+}
+
+.body {
+  @extend .aboutBody;
+
+  @include c.tabletMq {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+}
+
+.skillContainer {
+  width: 90%;
+  @include c.flexCenter(row);
+  flex-wrap: wrap;
+  gap: 1vmin;
+  border-bottom: 1px solid c.$p2;
+  margin-bottom: 1vmin;
+}
+
+.buttonsContainer {
+  width: 80%;
+  @include c.flexCenter(row);
+  justify-content: space-between;
+}

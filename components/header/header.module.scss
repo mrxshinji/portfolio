@@ -1,0 +1,102 @@
+@use "/styles/variables" as v;
+
+.container {
+  display: none;
+  @include v.flexCenter(row);
+  justify-content: space-between;
+  width: 90%;
+  height: 52px;
+  border: 2px solid v.$p2;
+  margin: 0 auto 0 auto;
+  padding: 0 2% 0 2%;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: v.$shadow;
+  z-index: 1;
+
+  @include v.desktopMq {
+    justify-content: flex-start;
+    gap: 1vmin;
+  }
+}
+
+.navMenu {
+  @include v.flexCenter(row);
+  gap: 1rem;
+  height: 100%;
+  position: relative;
+
+  li {
+    @include v.flexCenter(row);
+  }
+}
+
+.navMenuList {
+  @extend .navMenu;
+  display: none;
+
+  @include v.desktopMq {
+    display: flex;
+  }
+}
+
+.homeText {
+  color: v.$n1;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.linkIcon {
+  @include v.flexCenter(row);
+  fill: v.$n1;
+  height: 27px;
+  width: 27px;
+}
+
+.burgerIcon {
+  fill: v.$n1;
+  height: 27px;
+  width: 42px;
+}
+
+.collapsedButton {
+  border: none;
+  background: transparent;
+
+  @include v.desktopMq {
+    display: none;
+  }
+}
+
+// ------------ Sidebar -------------
+
+.sideBar {
+  position: absolute;
+  top: 0vh;
+  right: -5vw;
+  min-height: 95vh;
+  width: 50vw;
+  background-color: v.$p2;
+  padding-top: 10%;
+  padding-left: 10%;
+  z-index: 2;
+  @include v.flexCenter(column);
+  align-items: flex-start;
+  box-shadow: 5px 5px 30px 3000px rgba(0, 0, 0, 0.5);
+
+  ul {
+    @include v.flexCenter(column);
+    gap: 3vmin;
+  }
+
+  @include v.desktopMq {
+    display: none;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 0;
+  right: 2vmin;
+  @extend .collapsedButton;
+}

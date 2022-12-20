@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Countdown Timer",
+        "url": "https://fe-launch-countdown-timer.vercel.app/",
+        "repo": "https://github.com/mrxshinji/fe-launch-countdown-timer"
+    },
+    {
+        "name": "5 Way Rock Paper Scissors",
+        "url": "https://5way-rockpaperscissors-fe.vercel.app/",
+        "repo": "https://github.com/mrxshinji/5way-rockpaperscissors-FE"
+    },
+    {
+        "name": "Multi Page Space Tourism",
+        "url": "https://mrxshinji.github.io/interactive-space-tourism",
+        "repo": "https://github.com/mrxshinji/interactive-space-tourism"
+    },
+    {
+        "name": "Social Media Dashboard with theme switcher",
+        "url": "https://mrxshinji.github.io/social-media-dashboard/",
+        "repo": "https://github.com/mrxshinji/social-media-dashboard"
+    },
+    {
+        "name": "Interactive Pricing Component",
+        "url": "https://mrxshinji.github.io/interactive-pricing/",
+        "repo": "https://github.com/mrxshinji/interactive-pricing"
+    },
+    {
+        "name": "Easybank(Mock) landing Page",
+        "url": "https://easybank-landing-page-fe.vercel.app/",
+        "repo": "https://github.com/mrxshinji/easybank-landing-page-FE"
+    },
+    {
+        "name": "Discover Video Page",
+        "url": "https://ztm-discover-video.vercel.app/",
+        "repo": ""
+    },
+    {
+        "name": "Coffee Connoisseur",
+        "url": "https://ztm-coffee-stores.vercel.app/",
+        "repo": ""
+    },
+    {
+        "name": "Cloth Store App",
+        "url": "https://astounding-toffee-b48b1f.netlify.app/",
+        "repo": "https://github.com/mrxshinji/ZTM-crwn-clothing"
+    }
+]

@@ -1,0 +1,87 @@
+@use "styles/variables" as c;
+
+.container {
+  width: 100%;
+  position: relative;
+  @include c.flexCenter(column);
+
+  @include c.tabletMq {
+    height: 100%;
+  }
+}
+
+.title {
+  @extend .aboutTitle;
+  width: 50%;
+
+  @include c.tabletMq {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    margin-bottom: 0;
+    height: 80px;
+  }
+}
+
+.body {
+  @extend .aboutBody;
+
+  @include c.tabletMq {
+    height: 80%;
+    width: 90%;
+    grid-column: 1 / 3;
+    grid-row: 2 / 7;
+    padding: 2%;
+  }
+}
+
+.backBtn {
+  position: absolute;
+  left: 6vmin;
+  z-index: 99;
+  @include c.flexCenter(row);
+  border-radius: 50%;
+  padding: 1vmin;
+  border: 1px solid c.$p2;
+  height: 50px;
+  width: 50px;
+  box-shadow: c.$shadow;
+  transform: translateY(20%);
+  background-color: rgba(0, 0, 0, 0.5);
+
+  &:hover {
+    filter: brightness(1.5);
+  }
+
+  @include c.desktopMq {
+    left: 7vw;
+  }
+
+  @media (min-width: 1650px) {
+    left: 129px;
+  }
+}
+
+.buttons {
+  @include c.flexCenter(row);
+  background: none;
+  border: none;
+
+  svg {
+    height: 28px;
+    width: 28px;
+  }
+}
+
+.frontBtn {
+  @extend .backBtn;
+  left: unset;
+  right: 6vmin;
+
+  @include c.desktopMq {
+    right: 50vw;
+  }
+
+  @media (min-width: 1650px) {
+    left: 760px;
+  }
+}

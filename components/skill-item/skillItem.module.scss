@@ -1,0 +1,27 @@
+@use "styles/variables" as c;
+
+.container {
+  @include c.flexCenter(column);
+  text-align: center;
+  gap: 0.5rem;
+  padding: 2%;
+
+  p {
+    font-size: 16px;
+    color: c.$text;
+  }
+}
+
+.icon {
+  background-color: c.$p2;
+  border-radius: 50%;
+  @include c.flexCenter(row);
+  height: 65px;
+  width: 65px;
+  position: relative;
+}
+
+.icon svg {
+    width: 32px;
+    height: 32px;
+}

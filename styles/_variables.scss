@@ -3,7 +3,8 @@ $bg: #0d1821;
 $p2: #344966;
 $text: #b4cded;
 $n1: #f0f4ef;
-
+$shadow: 2px 2px 15px rgba(255, 255, 255, 0.1);
+$buttonBorder: #64ffda;
 
 @mixin flexCenter($direction) {
   display: flex;
@@ -11,3 +12,71 @@ $n1: #f0f4ef;
   justify-content: center;
   align-items: center;
 }
+
+@mixin tabletMq {
+  @media (min-width: 767px) {
+    @content;
+  }
+}
+
+@mixin desktopMq {
+  @media (min-width: 1140px) {
+    @content;
+  }
+}
+
+.aboutTitle {
+  width: 90%;
+  border: 2px solid $p2;
+  border-radius: 20px;
+  height: 54px;
+  @include flexCenter(column);
+  margin-bottom: 41px;
+  box-shadow: $shadow;
+
+  h1 {
+    font-size: 16px;
+    text-align: center;
+    color: $n1;
+  }
+
+  @include tabletMq {
+    width: 80%;
+    height: unset;
+    padding: 2%;
+    justify-self: center;
+
+    h1 {
+      font-size: 32px;
+    }
+  }
+}
+
+.aboutBody {
+  width: 90%;
+  height: 65vh;
+  @include flexCenter(column);
+  border: 2px solid $p2;
+  border-radius: 20px;
+  margin-bottom: 41px;
+  box-shadow: $shadow;
+
+  p {
+    width: 90%;
+    color: $text;
+  }
+
+  @include tabletMq {
+    width: 90%;
+    height: unset;
+    padding: 5% 0;
+    justify-self: center;
+
+    p {
+      font-size: 24px;
+    }
+  }
+}
+
+
+

@@ -1,0 +1,40 @@
+@use "/styles/variables" as v;
+
+.container {
+  width: 100vw;
+  height: 6vh;
+  position: relative;
+  margin: 0 auto 0 auto;
+  padding: 0 5% 0 5%;
+  @include v.flexCenter(row);
+
+  ul {
+    @include v.flexCenter(row);
+    width: 90%;
+    gap: 5vmin;
+    justify-content: space-between;
+
+    li {
+      flex: 1;
+      text-align: center;
+      @include v.flexCenter(row);
+    }
+  }
+}
+
+.footerBtn {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.linkActive {
+  scale: (1.2);
+  color: v.$buttonBorder;
+  border: 2px solid v.$p2;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 10px;
+  transition: all 0.2s linear;
+  box-shadow: v.$shadow;
+}
