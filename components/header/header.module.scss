@@ -73,9 +73,9 @@
 
 .sideBar {
   position: absolute;
-  top: 0vh;
-  right: -5vw;
-  min-height: 95vh;
+  top: -5vh;
+  // right: 100vw;
+  min-height: 105vh;
   width: 50vw;
   background-color: v.$p2;
   padding-top: 10%;
@@ -83,7 +83,9 @@
   z-index: 99;
   @include v.flexCenter(column);
   align-items: flex-start;
-  box-shadow: 5px 5px 30px 3000px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 50px 200px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
+
 
   ul {
     @include v.flexCenter(column);
@@ -97,7 +99,7 @@
 
 .closeButton {
   position: absolute;
-  top: 0;
+  top: 5vh;
   right: 2vmin;
   @extend .collapsedButton;
 }

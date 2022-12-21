@@ -3,12 +3,13 @@ import s from "./header.module.scss";
 import Link from "next/link";
 import { useEffect, useState, useRef } from "react";
 
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 import GithubIcon from "/public/svg/github.svg";
 import HamburgerIcon from "../hamburger/hamburger";
 import Button from "components/button/button";
 import NavList from "./navList";
+import CloseIcon from "components/hamburger/closeIcon";
 
 type Props = {
   isHeaderVisible: boolean;
@@ -71,16 +72,25 @@ const Header = ({ isHeaderVisible }: Props) => {
       <button onClick={toggleSidebar} className={s.collapsedButton}>
         <HamburgerIcon />
       </button>
-      {isSidebar && (
-        <div className={s.sideBar} ref={sideBarRef}>
-          <button onClick={toggleSidebar} className={s.closeButton}>
-            <HamburgerIcon />
-          </button>
-          <ul>
-            <NavList />
-          </ul>
-        </div>
-      )}
+      <AnimatePresence>
+        {isSidebar && (
+          <motion.div
+            className={s.sideBar}
+            ref={sideBarRef}
+            initial={{ left: "100%" }}
+            animate={{ left: "50%" }}
+            transition={{ duration: 0.5 }}
+            exit={{ left: "100%" }}
+          >
+            <button onClick={toggleSidebar} className={s.closeButton}>
+              <CloseIcon />
+            </button>
+            <ul>
+              <NavList />
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.div>
   );
 };

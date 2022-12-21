@@ -6,6 +6,8 @@
   max-width: 1650px;
   position: relative;
   background-color: v.$bg;
+  overflow: hidden;
+
   h1,
   h2 {
     color: v.$text;

@@ -20,11 +20,14 @@
       @include v.flexCenter(row);
     }
   }
-}
 
-.footerBtn {
-  padding: 5px;
-  font-size: 14px;
+  @include v.desktopMq {
+    width: 60vw;
+
+    p {
+      font-size: 20px;
+    }
+  }
 }
 
 .linkActive {
@@ -37,4 +40,8 @@
   border-radius: 10px;
   transition: all 0.2s linear;
   box-shadow: v.$shadow;
+
+  @include v.tabletMq {
+    font-size: 20px;
+  }
 }

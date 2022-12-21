@@ -72,7 +72,7 @@ const Footer = ({ isHeaderVisible }: Props) => {
               Object.keys(linkList)[selectLink]
             }
           >
-            <Button width={90} height={32}>
+            <Button width={100} height={42}>
               <p>{Object.values(linkList)[selectLink - 1]}</p>
             </Button>
           </Link>
@@ -91,7 +91,7 @@ const Footer = ({ isHeaderVisible }: Props) => {
               Object.keys(linkList)[selectLink]
             }
           >
-            <Button width={90} height={32}>
+            <Button width={100} height={42}>
               <p>{Object.values(linkList)[selectLink + 1]}</p>
             </Button>
           </Link>
