@@ -11,35 +11,35 @@ const NavList = () => {
   return (
     <>
       <li className={pathname === "/" ? s.active : undefined}>
-        <Button width={114} height={32}>
+        <Button width={114} height={32} className={s.navBtn}>
           <Link href={"/"}>
             <p>Home</p>
           </Link>
         </Button>
       </li>
       <li className={pathname === "/about" ? s.active : undefined}>
-        <Button width={114} height={32}>
+        <Button width={114} height={32} className={s.navBtn}>
           <Link href={"/about"}>
             <p>About</p>
           </Link>
         </Button>
       </li>
       <li className={pathname === "/skills" ? s.active : undefined}>
-        <Button width={114} height={32}>
+        <Button width={114} height={32} className={s.navBtn}>
           <Link href={"/skills"}>
             <p>Skills</p>
           </Link>
         </Button>
       </li>
       <li className={pathname === "/projects" ? s.active : undefined}>
-        <Button width={114} height={32}>
+        <Button width={114} height={32} className={s.navBtn}>
           <Link href={"/projects"}>
             <p>Projects</p>
           </Link>
         </Button>
       </li>
       <li className={pathname === "/contact" ? s.active : undefined}>
-        <Button width={114} height={32}>
+        <Button width={114} height={32} className={s.navBtn}>
           <Link href={"/contact"}>
             <p>Contact</p>
           </Link>

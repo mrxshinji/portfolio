@@ -14,7 +14,36 @@
       width: 100%;
       border-bottom: 3px solid v.$buttonBorder;
       border-radius: 10px;
-      
     }
   }
+}
+
+.navBtn {
+  border-style: none;
+  @include v.flexCenter(row);
+  font-family: "Space Mono";
+  font-size: 16px;
+  font-weight: 700;
+  color: v.$n1;
+  background-color: transparent;
+  transition: all 0.2s linear;
+  position: relative;
+
+  &:before {
+    content: "";
+    background-color: transparent;
+    height: 100%;
+    width: 30%;
+    border-left: 2px solid v.$buttonBorder;
+    border-radius: 20px;
+    position: absolute;
+    left: 0vmin;
+
+  }
+
+  &:hover {
+    scale: 1.1;
+    filter: brightness(0.5);
+  }
+
 }

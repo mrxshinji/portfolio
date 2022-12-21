@@ -16,7 +16,7 @@
 
   @include v.desktopMq {
     justify-content: flex-start;
-    gap: 1vmin;
+    gap: 5vmin;
   }
 }
 
@@ -34,6 +34,7 @@
 .navMenuList {
   @extend .navMenu;
   display: none;
+  gap: 1rem;
 
   @include v.desktopMq {
     display: flex;
@@ -79,7 +80,7 @@
   background-color: v.$p2;
   padding-top: 10%;
   padding-left: 10%;
-  z-index: 2;
+  z-index: 99;
   @include v.flexCenter(column);
   align-items: flex-start;
   box-shadow: 5px 5px 30px 3000px rgba(0, 0, 0, 0.5);

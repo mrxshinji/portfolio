@@ -1,16 +1,16 @@
-@use "styles/variables" as c;
+@use "styles/variables" as v;
 
 .buttonContainer {
   border-style: none;
-  border: 2px solid c.$buttonBorder;
+  border: 2px solid v.$buttonBorder;
   border-radius: 20px;
-  @include c.flexCenter(row);
+  @include v.flexCenter(row);
   font-family: "Space Mono";
   font-size: 16px;
   font-weight: 700;
-  color: c.$n1;
-  background-color: c.$bg;
-  box-shadow: c.$shadow;
+  color: v.$n1;
+  background-color: v.$bg;
+  box-shadow: v.$shadow;
   transition: all 0.2s linear;
 
   &:hover {

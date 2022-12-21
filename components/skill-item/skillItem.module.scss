@@ -1,21 +1,21 @@
-@use "styles/variables" as c;
+@use "styles/variables" as v;
 
 .container {
-  @include c.flexCenter(column);
+  @include v.flexCenter(column);
   text-align: center;
   gap: 0.5rem;
   padding: 2%;
 
   p {
     font-size: 16px;
-    color: c.$text;
+    color: v.$text;
   }
 }
 
 .icon {
-  background-color: c.$p2;
+  background-color: v.$p2;
   border-radius: 50%;
-  @include c.flexCenter(row);
+  @include v.flexCenter(row);
   height: 65px;
   width: 65px;
   position: relative;

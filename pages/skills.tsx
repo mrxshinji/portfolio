@@ -20,7 +20,7 @@ export default function Skills() {
       <NameLogo />
       <MotionVisible duration={0.2} delay={0}>
         <div className={s.title}>
-          <h1>Skills I`m focusing on</h1>
+          <h1>Skill Focused on recently</h1>
         </div>
         <div className={s.body}>
           <div className={s.skillContainer}>

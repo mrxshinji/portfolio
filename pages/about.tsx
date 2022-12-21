@@ -2,6 +2,7 @@ import s from "../styles/About.module.scss";
 
 import MotionVisible from "../components/motion/motionVisible";
 import NameLogo from "components/name/name";
+import Link from "next/link";
 
 
 export default function About() {
@@ -21,8 +22,8 @@ export default function About() {
           <br />
           <p>
             But now, I am aspiring Developer pursuing I would like to do. I may
-            not have much experience, but I still maange to make this sites
-            after three month of self-studying.
+            not have much experience, but I still manage to write <Link href="/projects">these</Link> sites
+            after first few month of self-studying.
           </p>
         </div>
       </MotionVisible>

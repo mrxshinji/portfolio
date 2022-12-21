@@ -2,7 +2,6 @@ import s from "../styles/Contact.module.scss";
 
 import MotionVisible from "../components/motion/motionVisible";
 import NameLogo from "components/name/name";
-import Link from "next/link";
 import Button from "components/button/button";
 
 export default function About() {
@@ -17,13 +16,17 @@ export default function About() {
           <h1>Get In Touch</h1>
         </div>
         <div className={s.body}>
+          <p>I believe its time for me to look for real world opportunites.</p>
+          <br />
           <p>
-            I`m currently looking for any new opportunities, my inbox is always
-            open. Whether you have a question or just want to say hi, I`ll try
-            my best to get back to you!
+            {" "}
+            My inbox is always open. Whether you have a question or just want to
+            say hi, I`ll try my best to get back to you!
           </p>
           <br />
-          <Button width={114} height={54} onClick={mailTo}>Say Hello</Button>
+          <Button width={114} height={54} onClick={mailTo}>
+            For Hire
+          </Button>
         </div>
       </MotionVisible>
     </div>

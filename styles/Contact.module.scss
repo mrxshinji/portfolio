@@ -1,9 +1,9 @@
-@use "styles/variables" as c;
+@use "styles/variables" as v;
 
 .container {
   width: 100%;
   position: relative;
-  @include c.flexCenter(column);
+  @include v.flexCenter(column);
 
   height: 100%
 }
@@ -16,6 +16,6 @@
   @extend .aboutBody;
 
   label {
-    color: c.$text;
+    color: v.$text;
   }
 }

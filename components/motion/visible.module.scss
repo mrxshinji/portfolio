@@ -1,12 +1,12 @@
-@use "styles/variables" as c;
+@use "styles/variables" as v;
 
 .container {
   width: 100%;
   height: 100%;
   position: relative;
-  @include c.flexCenter(column);
+  @include v.flexCenter(column);
 
-  @include c.tabletMq {
+  @include v.tabletMq {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }

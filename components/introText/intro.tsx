@@ -14,15 +14,14 @@ const Intro = () => {
       className={s.frontContainer}
       initial={canAnimate}
       animate={{
-        right: ["-400px", "0px"],
+        right: ["-100%", "0%"],
         opacity: [1],
       }}
       transition={{ duration: 1, delay: 1 }}
     >
       <div className={s.introTextContainer}>
         <p>
-          Hello, I`m Shinji, with an alias of mrxshinji which read as “Mr, X,
-          Shinji”.
+          Hello, I`m Shinji, with an alias of mrxshinji”.
         </p>
         <br />
         <p>I`m a front-end web developer based in Kuala Lumpur, Malaysia.</p>
@@ -37,10 +36,10 @@ const Intro = () => {
               <Link href='/skills'>My Skills</Link>
             </li>
             <li>
-              <Link href='/project'>My Work</Link>
+              <Link href='/projects'>My Work</Link>
             </li>
             <li>
-              <Link href='/'>Contact Me</Link>
+              <Link href='/contact'>Contact Me</Link>
             </li>
           </ul>
         </MotionVisible>
