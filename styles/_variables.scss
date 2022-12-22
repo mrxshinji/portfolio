@@ -78,5 +78,22 @@ $buttonBorder: #64ffda;
   }
 }
 
+@mixin clickable {
+  border-style: none;
+  border: 2px solid $buttonBorder;
+  border-radius: 20px;
+  @include flexCenter(row);
+  font-family: "Space Mono";
+  font-size: 16px;
+  font-weight: 700;
+  color: $n1;
+  background-color: $bg;
+  box-shadow: $shadow;
+  transition: all 0.2s linear;
 
+  &:hover {
+    scale: 1.1;
+    filter: brightness(0.5);
+  }
+}
 

@@ -59,7 +59,7 @@ const Header = ({ isHeaderVisible }: Props) => {
           </Link>
         </li>
         <li>
-          <Link href={gitHubLink}>
+          <Link href={gitHubLink} aria-label="Link to mrxshinji's Github">
             <span className={s.linkIcon}>
               <GithubIcon />
             </span>
@@ -69,7 +69,7 @@ const Header = ({ isHeaderVisible }: Props) => {
       <ul className={s.navMenuList}>
         <NavList />
       </ul>
-      <button onClick={toggleSidebar} className={s.collapsedButton}>
+      <button onClick={toggleSidebar} className={s.collapsedButton} aria-label="Open Sidebar">
         <HamburgerIcon />
       </button>
       <AnimatePresence>
@@ -82,7 +82,7 @@ const Header = ({ isHeaderVisible }: Props) => {
             transition={{ duration: 0.5 }}
             exit={{ left: "100%" }}
           >
-            <button onClick={toggleSidebar} className={s.closeButton}>
+            <button onClick={toggleSidebar} className={s.closeButton} aria-label="Close Sidebar">
               <CloseIcon />
             </button>
             <ul>

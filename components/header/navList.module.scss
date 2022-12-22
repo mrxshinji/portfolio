@@ -28,16 +28,17 @@
   background-color: transparent;
   transition: all 0.2s linear;
   position: relative;
+  padding: 0 5%;
 
   &:before {
     content: "";
     background-color: transparent;
-    height: 100%;
-    width: 30%;
+    height: 24px;
+    width: 50%;
     border-left: 2px solid v.$buttonBorder;
     border-radius: 20px;
     position: absolute;
-    left: 0vmin;
+    left: -1.5vmin;
 
   }
 

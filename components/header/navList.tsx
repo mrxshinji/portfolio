@@ -1,6 +1,5 @@
 import s from "./navList.module.scss";
 
-import Button from "components/button/button";
 import Link from "next/link";
 
 import { useRouter } from "next/router";
@@ -11,39 +10,24 @@ const NavList = () => {
   return (
     <>
       <li className={pathname === "/" ? s.active : undefined}>
-        <Button width={114} height={32} className={s.navBtn}>
-          <Link href={"/"}>
-            <p>Home</p>
-          </Link>
-        </Button>
-      </li>
-      <li className={pathname === "/about" ? s.active : undefined}>
-        <Button width={114} height={32} className={s.navBtn}>
-          <Link href={"/about"}>
-            <p>About</p>
-          </Link>
-        </Button>
-      </li>
-      <li className={pathname === "/skills" ? s.active : undefined}>
-        <Button width={114} height={32} className={s.navBtn}>
-          <Link href={"/skills"}>
-            <p>Skills</p>
-          </Link>
-        </Button>
+        <Link href={"/"} className={s.navBtn}>
+          <p>Home</p>
+        </Link>
       </li>
       <li className={pathname === "/projects" ? s.active : undefined}>
-        <Button width={114} height={32} className={s.navBtn}>
-          <Link href={"/projects"}>
-            <p>Projects</p>
-          </Link>
-        </Button>
+        <Link href={"/projects"} className={s.navBtn}>
+          <p>Projects</p>
+        </Link>
+      </li>
+      <li className={pathname === "/skills" ? s.active : undefined}>
+        <Link href={"/skills"} className={s.navBtn}>
+          <p>Skills</p>
+        </Link>
       </li>
       <li className={pathname === "/contact" ? s.active : undefined}>
-        <Button width={114} height={32} className={s.navBtn}>
-          <Link href={"/contact"}>
-            <p>Contact</p>
-          </Link>
-        </Button>
+        <Link href={"/contact"} className={s.navBtn}>
+          <p>Contact</p>
+        </Link>
       </li>
     </>
   );
