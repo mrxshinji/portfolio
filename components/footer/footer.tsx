@@ -6,8 +6,6 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
-import Button from "components/button/button";
-
 type Props = {
   isHeaderVisible: boolean;
 };

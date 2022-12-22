@@ -21,6 +21,7 @@
   font-size: 18px;
   font-weight: 700;
   border: 2px solid v.$p2;
+  box-shadow: v.$shadow;
   transition: all 0.5s linear;
   text-align: start;
   overflow: hidden;
@@ -44,6 +45,7 @@
   border: 2px solid v.$p2;
   padding: 5%;
   border-radius: 20px;
+  box-shadow: v.$shadow;
 
   p {
     color: v.$text;

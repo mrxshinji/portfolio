@@ -7,7 +7,6 @@ import { AnimatePresence, motion } from "framer-motion";
 
 import GithubIcon from "/public/svg/github.svg";
 import HamburgerIcon from "../hamburger/hamburger";
-import Button from "components/button/button";
 import NavList from "./navList";
 import CloseIcon from "components/hamburger/closeIcon";
 
