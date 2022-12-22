@@ -1,8 +1,6 @@
 import s from "../styles/Skills.module.scss";
 import MotionVisible from "../components/motion/motionVisible";
 import NameLogo from "components/name/name";
-import Button from "components/button/button";
-import Link from "next/link";
 import SkillItem from "components/skill-item/skillItem";
 
 import HtmlIcon from "public/svg/html.svg";
@@ -18,7 +16,7 @@ export default function Skills() {
   return (
     <div className={s.container}>
       <NameLogo />
-      <MotionVisible duration={0.2} delay={0}>
+      <MotionVisible duration={0.7} delay={0}>
         <div className={s.title}>
           <h1>Skill Focused on recently</h1>
         </div>

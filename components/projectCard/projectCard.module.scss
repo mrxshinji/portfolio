@@ -79,3 +79,24 @@
     object-fit: cover;
   }
 }
+
+.ougiImgContainer {
+  position: absolute;
+  left: -10vw;
+  width: 100vw;
+  border: 3px solid v.$p2;
+  height: 40vh;
+  border-radius: 25px;
+  box-shadow: v.$shadow,
+  0 0 5px 200px rgba(0, 0, 0, 0.3);
+  @include v.flexCenter(row);
+  z-index: 99;
+}
+
+.ougiImage {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 25px;
+  
+  width: 100vw;
+}

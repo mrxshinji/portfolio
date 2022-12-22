@@ -11,7 +11,7 @@ export default function About() {
   return (
     <div className={s.container}>
       <NameLogo />
-      <MotionVisible duration={0.2} delay={0}>
+      <MotionVisible duration={0.7} delay={0}>
         <div className={s.title}>
           <h1>Get In Touch</h1>
         </div>

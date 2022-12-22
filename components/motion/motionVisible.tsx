@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { ReactNode } from "react";
 
 import s from "./visible.module.scss";
@@ -12,6 +12,7 @@ type Props = {
 
 const MotionVisible = ({ canAnimate = true, duration, delay, children }: Props) => {
   return (
+    <AnimatePresence>
       <motion.div
         layout
         initial={canAnimate}
@@ -21,6 +22,7 @@ const MotionVisible = ({ canAnimate = true, duration, delay, children }: Props) 
       >
         {children}
       </motion.div>
+      </AnimatePresence>
   );
 };
 
