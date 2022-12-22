@@ -34,7 +34,7 @@
 .navMenuList {
   @extend .navMenu;
   display: none;
-  gap: 1rem;
+  gap: 4vmin;
 
   @include v.desktopMq {
     display: flex;

@@ -45,3 +45,9 @@
     font-size: 20px;
   }
 }
+
+.linkContainer {
+  @include v.clickable;
+  width: 100px;
+  height: 42px;
+}

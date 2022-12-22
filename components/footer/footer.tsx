@@ -17,16 +17,15 @@ const Footer = ({ isHeaderVisible }: Props) => {
   const [selectLink, setSelectLink] = useState(0);
 
   useEffect(() => {
-    const list = ["/", "/about", "/skills", "/projects", "/contact"];
+    const list = ["/", "/projects", "/skills", "/contact"];
     let linkNumber = list.indexOf(pathname);
     setSelectLink(linkNumber);
   }, [pathname]);
 
   const linkList = {
     "/": "Home",
-    "/about": "About",
-    "/skills": "Skills",
     "/projects": "Works",
+    "/skills": "Skills",
     "/contact": "Contact",
   };
 
@@ -46,8 +45,8 @@ const Footer = ({ isHeaderVisible }: Props) => {
 
   const handleNextLink = (): void => {
     setSelectLink((prev) => {
-      if (prev === 4) {
-        return 4;
+      if (prev === 3) {
+        return 3;
       } else {
         return prev + 1;
       }
@@ -71,10 +70,11 @@ const Footer = ({ isHeaderVisible }: Props) => {
               Object.keys(linkList)[selectLink - 1] ||
               Object.keys(linkList)[selectLink]
             }
+            className={s.linkContainer}
           >
-            <Button width={100} height={42}>
-              <p>{Object.values(linkList)[selectLink - 1]}</p>
-            </Button>
+            <div>
+              <p>{Object.values(linkList)[selectLink - 1] || "disabled button"}</p>
+            </div>
           </Link>
         </li>
         <li className={s.linkActive}>
@@ -90,10 +90,9 @@ const Footer = ({ isHeaderVisible }: Props) => {
               Object.keys(linkList)[selectLink + 1] ||
               Object.keys(linkList)[selectLink]
             }
+            className={s.linkContainer}
           >
-            <Button width={100} height={42}>
-              <p>{Object.values(linkList)[selectLink + 1]}</p>
-            </Button>
+            <p>{Object.values(linkList)[selectLink + 1]}</p>
           </Link>
         </li>
       </ul>

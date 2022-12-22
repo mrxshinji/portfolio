@@ -4,7 +4,7 @@
   position: relative;
   width: 90%;
   @include v.flexCenter(column);
-  gap: 5rem;
+  gap: 2rem;
   right: 0;
 
   @include v.tabletMq {
@@ -40,57 +40,42 @@
   align-items: flex-end;
   position: relative;
   transition: all 0.5s linear;
-  width: 60%;
+  width: 80%;
+  border: 2px solid v.$p2;
+  padding: 5%;
+  border-radius: 20px;
 
-  ul {
-    @include v.flexCenter(column);
-    align-items: flex-start;
-    padding: 15% 5%;
-    border: 2px solid v.$p2;
-    gap: 5px;
-    width: 100%;
-    border-radius: 20px;
+  p {
+    color: v.$text;
+    font-size: 14px;
+    font-weight: 40;
+    text-align: start;
 
-    li {
-      color: v.$text;
-      font-size: 26px;
+    a {
+      text-decoration: underline;
+      color: v.$buttonBorder;
       font-weight: 700;
-      text-align: start;
-      position: relative;
-      padding-left: 5%;
-      
-      &:hover,
-      &:focus {
-        transform: scale(1.2);
-        color: v.$n1;
-      }
-
-      &:before {
-        content: '';
-        height: 100%;
-        width: 30%;
-        border-left: 2px solid v.$buttonBorder;
-        border-radius: 20px;
-        position: absolute;
-        left: -2vmin;
-      }
+      font-size: 16px;
     }
   }
 
   @include v.tabletMq {
     grid-row: 2 / 3;
-    grid-column: 2 / 3;
-    width: 100%;
+    grid-column: 1 / 3;
+    flex-direction: column;
+    width: 70%;
     align-items: center;
-    align-self: center;
+    justify-content: center;
+    place-self: flex-end;
 
-    ul {
-      width: 100%;
+    p {
       grid-column: 1 / 3;
-      align-items: center;
+      width: 100%;
+      text-align: justify;
+      font-size: 16px;
 
-      li {
-        padding-left: 2%;
+      a {
+        font-size: 18px;
       }
     }
   }
