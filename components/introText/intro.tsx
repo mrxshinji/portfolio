@@ -14,7 +14,7 @@ const Intro = () => {
       className={s.frontContainer}
       initial={canAnimate}
       animate={{
-        right: ["-100%", "0%"],
+        right: ["-80%", "0%"],
         opacity: [1],
       }}
       transition={{ duration: 1, delay: 1 }}
