@@ -91,6 +91,19 @@
   0 0 5px 200px rgba(0, 0, 0, 0.3);
   @include v.flexCenter(row);
   z-index: 99;
+
+  @include v.tabletMq {
+    left: -8%;
+    width: 116%;
+  }
+
+  @include v.desktopMq {
+    left: 0%;
+    height: 60vh;
+    width: 100%;
+    box-shadow: v.$shadow,
+    0 0 5px 1000px rgba(0, 0, 0, 0.3);
+  }
 }
 
 .ougiImage {

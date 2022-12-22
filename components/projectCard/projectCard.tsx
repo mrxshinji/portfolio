@@ -19,8 +19,8 @@ const ProjectCard = ({ imgUrl, webLink, repoLink, name, isOugi }: Props) => {
             className={s.ougiImgContainer}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.2 }}
-            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+            exit={{ opacity: [1, 0.5, 0] }}
           >
             <Image src={imgUrl} alt='Preview' fill className={s.ougiImage} />{" "}
           </motion.div>
