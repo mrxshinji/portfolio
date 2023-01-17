@@ -66,6 +66,7 @@
   @include v.flexCenter(row);
   background: none;
   border: none;
+  cursor: pointer;
 
   svg {
     height: 28px;

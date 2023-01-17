@@ -12,6 +12,7 @@
   background-color: v.$bg;
   box-shadow: v.$shadow;
   transition: all 0.2s linear;
+  cursor: pointer;
 
   &:hover {
     scale: 1.1;
