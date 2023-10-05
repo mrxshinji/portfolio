@@ -20,7 +20,7 @@ const Intro = () => {
       transition={{ duration: 1, delay: 1 }}
     >
       <div className={s.introTextContainer}>
-        <p>Hello, I`m Shinji, with an alias of mrxshinji”.</p>
+        <p>Hello, I`m ZH Wong, with an alias of mrxshinji”.</p>
         <br />
         <p>I`m a front-end web developer based in Kuala Lumpur, Malaysia.</p>
       </div>
@@ -28,12 +28,12 @@ const Intro = () => {
         <MotionVisible canAnimate={canAnimate} duration={1} delay={2}>
           <p>
             I was a Project Engineer who manage multi-million projects and
-            ensuring project meeting deadlines.
+            ensuring project meeting deadlines. Now working as CRM Developer. (Project RUBIK, CIMB)
           </p>
           <br />
           <p>
-            But now, I am aspiring Developer pursuing I would like to do. I may
-            not have much experience, but I still manage to write{" "}
+            I am aspiring Developer pursuing I would like to do. I may
+            not have much experience and yet manage to write{" "}
             <Link className={s.linkToWork} href='/projects'>
               these
             </Link>{" "}

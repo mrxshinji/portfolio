@@ -51,6 +51,11 @@ export default function Skills() {
               <MongoIcon />
             </SkillItem>
           </div>
+          <div className={s.skillContainer}>
+            <SkillItem name={"CRM"}>
+              D365
+            </SkillItem>
+          </div>
         </div>
       </MotionVisible>
     </div>
